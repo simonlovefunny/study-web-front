@@ -116,7 +116,7 @@ input type
     
 | type | 描述    |
 | ------  | ------ | 
-| text |  文字域|
+| text(textarea) |  文字域|
 | password  | 密码域 |
 | file | 文件域 | 
 | checkbox | 复选域 | 
@@ -126,6 +126,8 @@ input type
 | Reset | 重置按钮 | 
 | Hidden | 隐藏域 | 
 | image | 图像域 | 
+
+
 
 
 工具

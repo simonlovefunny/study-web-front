@@ -6,15 +6,80 @@
 </head>
 <body>
 
+     <div align="center">
+     <h1 align="center">注册信息</h1>
+     <hr color="#336699" />
 
 
-   <form>
-       账号:  <input type="text" name="username"/> <br/>
-       密码:  <input type="password" name="password"/><br/>
+         <form>
+             <table width="600px" bgcolor="#f8f8ff" align="center">
+                 <tr>
+                     <td align="right">姓名：</td>
+                     <td align="left"><input type="text" name="username" size="25" maxlength="6" placeholder="请输入姓名"/></td>
+                 </tr>
+                 <tr>
+                     <td align="right">邮箱：</td>
+                     <td align="left"><input type="email" name="email" value="@163.com"></td>
+                 </tr>
+                 <tr>
+                     <td align="right">密码：</td>
+                     <td align="left"><input type="password" name="password" size="25" maxlength="6" placeholder="请输入密码"/></td>
+                 </tr>
+                 <tr>
+                     <td align="right">确认密码：</td>
+                     <td align="left"><input type="password" name="ensure" size="25" maxlength="6" placeholder="请再次输入密码"></td>
+                 </tr>
+                 <tr>
+                     <td align="right">上传照片：</td>
+                     <td align="left"><input type="file" name="file"></td>
+                 </tr>
+                 <tr>
+                     <td align="right">性别： </td>
+                     <td align="left">男<input type="radio" name="sex" value="man">
+                         女<input type="radio" name="sex" value="woman"></td>
+                 </tr>
+                 <tr>
+                     <td align="right">爱好：</td>
+                     <td align="left">读书<input type="checkbox" name="read" checked>
+                         游泳<input type="checkbox" name="swim">
+                         跑步<input type="checkbox" name="run"></td>
+                 </tr>
 
-       <input type="submit"/>
+                 <tr>
+                     <td><input type="hidden" name="hidden" value="用户注册信息"> </td>
+                 </tr>
+                 <tr>
+                     <td align="right">城市：</td>
+                     <td align="left">
+                         <select>
+                             <!-- value为送往服务器的值 -->
+                             <option>--请选择--</option>
+                             <option value="bj">北京</option>
+                             <option value="sh">上海</option>
+                             <option value="tj">天津</option>
+                         </select>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td colspan="2" align="center"><input type="button" value="点击按钮" name="button">
+                         <input type="submit" name="提交">
+                         <input type="reset" name="重置"></td>
+                 </tr>
 
-   </form>
+             </table>
+         </form>
+
+     </div>
+
+
+
+<!--   <form>-->
+<!--       账号:  <input type="textarea" name="username"/> <br/>-->
+<!--       密码:  <input type="password" name="password"/><br/>-->
+
+<!--       <input type="submit" value="提交"/> <input type="reset"/>-->
+
+<!--   </form>-->
 
 </body>
 </html>
