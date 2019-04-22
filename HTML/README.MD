@@ -104,6 +104,30 @@ table 可选属性
 |summary |text |规定表格的摘要 |
 |width | %，pixels | 规定表格的宽度 |
 
+
+表单
+
+\<form> 标签用于为用户输入创建 HTML 表单
+
+
+    <input type="类型属性" name="名称" .../>
+
+input type
+    
+| type | 描述    |
+| ------  | ------ | 
+| text |  文字域|
+| password  | 密码域 |
+| file | 文件域 | 
+| checkbox | 复选域 | 
+| radio | 单选域| 
+| Button | 按钮| 
+| Submit | 提交按钮 | 
+| Reset | 重置按钮 | 
+| Hidden | 隐藏域 | 
+| image | 图像域 | 
+
+
 工具
 
 http://validator.w3.org W3C的HTML页面检测工具
