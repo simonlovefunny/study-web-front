@@ -78,3 +78,13 @@ document.body是网页里能被看到的部分，也就是<body></body>元素的
 #### BOM Browser Object Model
 
 浏览器对象模型
+
+浏览器的全局对象，函数和变量都是Window对象的成员
+
+DOM的document对象也是window的成员
+
+``` JavaScript
+
+window.document.getElementById("header");
+
+```
