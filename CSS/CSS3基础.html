@@ -4,16 +4,66 @@
     <meta charset="UTF-8">
     <title>CSS3基础</title>
     <style type="text/css">
-        p{font-size: 30px;color:blue;}
-        h1,h2,h3{font-size: 30px;color: red}
+        p {
+            font-size: 30px;
+            color: blue;
+        }
+
+        /*h1,h2,h3{font-size: 30px;color: red}*/
+
+        h2 strong {
+            color: red;
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        <!--
+        派生选择器，只对列表中的strong元素生效
+
+        -->
+        li strong {
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        #red {
+            color: red;
+        }
+
+        #green {
+            color: green;
+        }
+
+        .center {
+            text-align: center
+        }
+
+
     </style>
+
 </head>
 <body>
 
-    <h1>CSS层叠样式</h1>
-    <h2>CSS层叠样式</h2>
-    <h3>CSS层叠样式</h3>
-    <p>用于定义HTML内容在浏览器中的显示样式</p>
+<h1>CSS层叠样式</h1>
+<h2>CSS层叠样式</h2>
+<h3>CSS层叠样式</h3>
+<p>用于定义HTML内容在浏览器中的显示样式</p>
+
+<!-- 行内样式   -->
+<h1 style="color:red;font-size:20px">CSS层叠样式</h1>
+
+
+<p><strong>我是非派生选择器</strong></p>
+<ul>
+    <li><strong>我是派生选择器</strong></li>
+    <li>我是正常字体</li>
+</ul>
+
+<h2><strong>带颜色的派生选择器</strong></h2>
+
+<h1 id="red">Id选择器，红色</h1>
+
+<h1 id="green">Id选择器，绿色</h1>
 
 
 </body>

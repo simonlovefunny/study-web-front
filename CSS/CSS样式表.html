@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS样式表</title>
+
+    <style type="text/css">
+        /*类派生选择器*/
+        .fancy td {
+            color: #f60;
+            background: #666;
+        }
+
+        /*属性选择器*/
+        [title] {
+            color: red;
+        }
+
+        [lang|=en] {
+            color: red;
+        }
+
+        input[type="text"] {
+            width: 150px;
+            display: block;
+            margin-bottom: 10px;
+            background-color: yellow;
+            font-family: Verdana, Arial;
+        }
+
+        input[type="button"] {
+            width: 120px;
+            margin-left: 35px;
+            display: block;
+            background-color: #ff6600;
+            font-family: Verdana, Arial;
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="center">
+    This heading will be center-aligned
+</h1>
+
+
+<table class="fancy" border="1" width="500px">
+    <caption>表格标签实例</caption>
+    <tr>
+        <th>Month</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td>January</td>
+        <td>$100</td>
+    </tr>
+</table>
+
+
+<h2 title="Hello World">Hello World</h2>
+
+
+<h1>可以应用样式：</h1>
+<p lang="en">Hello!</p>
+<p lang="en-us">Hi!</p>
+<hr/>
+
+<h1>无法应用样式：</h1>
+<p lang="us">Hi!</p>
+<p lang="zh">Hao!</p>
+
+
+<!--    处理不带class或id的表单样式-->
+
+<form name="user_form" action="" method="get">
+
+    <input type="text" name="username" value="Bill" size="20">
+    <input type="button" value="Example Button">
+</form>
+</body>
+</html>
