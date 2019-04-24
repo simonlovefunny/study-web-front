@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript基础知识</title>
+</head>
+<body>
+   <p>
+       JavaScript能够直接写入HTML输出流（页面显示）
+   </p>
+
+   <!--   页面输出-->
+   <script>
+       document.write("<h1>This is the heading</h1>")
+       document.write("<p>This is a paragraph</p>")
+
+       function changeHtml(){
+           x=document.getElementById("demo");
+           x.innerHTML="Hello World JS!";
+       }
+
+   </script>
+
+   <script>
+
+       function printObject(){
+           var person={name:"Bill",id:1};
+           name=person.name;
+           id=person.id;
+
+           document.write(name+'<br/>');
+           document.write(id);
+       }
+
+   </script>
+
+   <p>
+       您只能在 HTML 输出流中使用 <strong>document.write</strong>。
+       如果您在文档已加载后使用它（比如在函数中），会覆盖整个文档。
+   </p>
+
+   <!--   点击事件-->
+   <button type="button" onclick="alert('Welcome!')">点击这里</button>
+
+   <button type="button" onclick="changeHtml()">变更显示内容</button>
+
+   <p id="demo">hahaha</p>
+
+   <button type="button" onclick="printObject()">输出对象信息</button>
+
+
+
+
+</body>
+</html>
