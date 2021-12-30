@@ -100,7 +100,7 @@ This heading will be center-aligned
 为所有属性名为title，值为Hello World的元素设置样式
 
 ``` css
-[title=W3School]
+[title=Hello World]
 {
 border:5px solid blue;
 }
